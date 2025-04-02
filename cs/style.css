@@ -78,19 +78,19 @@ section{
 	margin-top: 60px;
 }
 #sec1{
-    background-image: url(imagesdesined/セクション1.png);
+    background-image: url(../imagesdesined/セクション1.png);
     aspect-ratio: 1280 / 688;
 }
 #sec2{
-    background-image: url(imagesdesined/セクション２.png);
+    background-image: url(../imagesdesined/セクション２.png);
     aspect-ratio: 1280 / 1460;
 }
 #sec3{
-    background-image: url(imagesdesined/セクション３.png);
+    background-image: url(../imagesdesined/セクション３.png);
     aspect-ratio: 1280 / 670;
 }
 #sec4{
-    background-image: url(imagesdesined/セクション４.png);
+    background-image: url(../imagesdesined/セクション４.png);
     aspect-ratio: 1280 / 536;
 }
 
@@ -143,7 +143,7 @@ header nav{
 .Top{
     display: block;
     position: relative;
-    background: url(imagesdesined/sp-top.png);
+    background: url(../imagesdesined/sp-top.png);
     background-size: cover !important;/*背景画像の横幅合わせ*/
 	aspect-ratio: 375 / 522;/*アスペクト比の固定*/	
     margin-bottom: 0px;
@@ -189,19 +189,19 @@ a:hover
     display: block;
 }
 #sec1{
-    background-image: url(imagesdesined/セクション1sp.png);
+    background-image: url(../imagesdesined/セクション1sp.png);
     aspect-ratio: 375 / 473;
 }
 #sec2{
-    background-image: url(imagesdesined/セクション2sp.png);
+    background-image: url(../imagesdesined/セクション2sp.png);
     aspect-ratio: 375 / 3254;
 }
 #sec3{
-    background-image: url(imagesdesined/セクション3sp.png);
+    background-image: url(../imagesdesined/セクション3sp.png);
     aspect-ratio: 375 / 365;
 }
 #sec4{
-    background-image: url(imagesdesined/セクション4sp.png);
+    background-image: url(../imagesdesined/セクション4sp.png);
     aspect-ratio: 375 / 650;
 }
 
