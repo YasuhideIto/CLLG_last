@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+
+
+body{
+    /*max-width: 1280px;*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*overflow-x: hidden;*/
+    background-color: #666;
+}
+
+header nav p, header nav a ,header h2{
+    white-space: nowrap; /* 改行を禁止 */
+}
+header {
+    width: 100%;
+    display: flex;/*子要素を横並びに*/
+    padding: 5px 20px;/*ヘッダー内のパディング上下10px左右10px*/
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-between;
+    top: 0;
+    box-sizing: border-box;
+}
+header h2
+{
+    margin: 0;
+    font-size: 28px;
+}
+
+header nav
+{
+    display: flex;
+    gap: 80px;
+
+}
+header nav p
+{
+    font-size: 22px;
+    margin: 0;
+}
+header p a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+a:hover
+{
+    opacity: 0.2;
+    display: block;
+}
+
+.Top {
+    position: relative; /* 子要素を絶対配置できるようにする */
+    text-align: left;
+    width: 100%; /* セクションをページ全幅にする */
+}
+.Top img{
+    width: 100%;
+    display: block;/*余計な隙間を削除*/
+}
+.Top h1{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    left: 10%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+section{
+	background-size: contain !important;/*背景画像の横幅合わせ*/
+	margin-top: 60px;
+}
+#sec1{
+    background-image: url(imagesdesined/セクション1.png);
+    aspect-ratio: 1280 / 688;
+}
+#sec2{
+    background-image: url(imagesdesined/セクション２.png);
+    aspect-ratio: 1280 / 1460;
+}
+#sec3{
+    background-image: url(imagesdesined/セクション３.png);
+    aspect-ratio: 1280 / 670;
+}
+#sec4{
+    background-image: url(imagesdesined/セクション４.png);
+    aspect-ratio: 1280 / 536;
+}
+
+/*--------------------フッター---------------------*/
+footer{
+    background-color:#D9D9D9;
+    margin-top: 60px;
+    padding: 40px 115px;
+}
+.contact_box{
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+}
+.icon{
+    color: #000;
+}
+
+/*sp版のナビゲーションはpc版で消す*/
+.sp-menu{
+    display: none;
+}
+/*メディアクエリ--------------------------ここから下SP版-------------------------------------------*/
+@media screen and (max-width:375px){/*画面サイズが768px以下のデザイン設定*/
+
+
+body{
+    max-width: 375px;
+    width: 100%;
+    margin:  0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;/*子要素を横並びに*/
+    padding: 5px 20px;/*ヘッダー内のパディング上下10px左右10px*/
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-between;
+    top: 0;
+    box-sizing: border-box;
+}
+header nav{
+    display: none;
+}
+.Top{
+    display: block;
+    position: relative;
+    background: url(imagesdesined/sp-top.png);
+    background-size: cover !important;/*背景画像の横幅合わせ*/
+	aspect-ratio: 375 / 522;/*アスペクト比の固定*/	
+    margin-bottom: 0px;
+}
+.Top img{
+    display: none;
+}
+.Top h1{
+    display: none;
+}
+header h2
+{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.sp-menu{
+    display: block;
+    margin: 60px 30px 0px 30px;
+}
+.sp-menu nav{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 40px 0px;
+}
+.sp-menu nav p
+{
+    font-size: 22px;
+    margin: 0;
+}
+.sp-menu p a
+{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+a:hover
+{
+    opacity: 0.2;
+    display: block;
+}
+#sec1{
+    background-image: url(imagesdesined/セクション1sp.png);
+    aspect-ratio: 375 / 473;
+}
+#sec2{
+    background-image: url(imagesdesined/セクション2sp.png);
+    aspect-ratio: 375 / 3254;
+}
+#sec3{
+    background-image: url(imagesdesined/セクション3sp.png);
+    aspect-ratio: 375 / 365;
+}
+#sec4{
+    background-image: url(imagesdesined/セクション4sp.png);
+    aspect-ratio: 375 / 650;
+}
+
+/*フッター-----------------------------------*/
+footer{
+    margin-top: 60px;
+    background-color:#D9D9D9;
+    padding: 10px 20px;
+}
+.contact_box{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px 20px;
+    
+}
+.icon{
+    display: block;
+    color: #000;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+    
+    
+}
